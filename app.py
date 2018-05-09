@@ -19,4 +19,4 @@ def get_allstore():
 def get_store():
     pass
 if __name__ == '__main__':
-    app.run(port=5000 , debug=True)
+    app.run(port=5000 , debug=True,host='0.0.0.0')
