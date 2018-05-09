@@ -1,2 +1,2 @@
-webworker: uwsgi uwsgi.ini
+web: uwsgi uwsgi.ini
 requirements
