@@ -1,2 +1,3 @@
 Flask
 uwsgi
+Flask_RESTful

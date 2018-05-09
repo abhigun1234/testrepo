@@ -1,8 +1,9 @@
 __author__ = 'AG00341558'
 from flask import Flask,jsonify
+from flask_restful import Api
 app=Flask(__name__)
 
-
+api=Api(app)
 stores=[{'name':'my wonder store','items':[{'name':'my item','price':15.99}]}]
 @app.route('/')
 def home():
