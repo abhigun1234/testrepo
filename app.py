@@ -17,4 +17,5 @@ def get_allstore():
 @app.route('/getstore/<string:name>',methods=['get'])
 def get_store():
     pass
-app.run()
+from os import environ
+app.run(debug=False, port=environ.get("PORT", 5000))
