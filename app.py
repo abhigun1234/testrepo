@@ -17,4 +17,4 @@ def get_allstore():
 @app.route('/getstore/<string:name>',methods=['get'])
 def get_store():
     pass
-app.run()
+app.run(port=5000,debug=true)
