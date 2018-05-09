@@ -18,4 +18,4 @@ def get_allstore():
 def get_store():
     pass
 
-app.run()
+app.run(host='0.0.0.0')
