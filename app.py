@@ -19,4 +19,5 @@ def get_allstore():
 def get_store():
     pass
 if __name__ == '__main__':
-    app.run(port=5000 , debug=True,host='0.0.0.0')
+    from os import environ
+    app.run(debug=False, port=environ.get("PORT", 5000))
