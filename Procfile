@@ -1,2 +1,2 @@
-web: python code.py $PORT
+web:gunicorn app:app
 requirements
