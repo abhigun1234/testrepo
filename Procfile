@@ -1,2 +1,2 @@
-worker: uwsgi uwsgi.ini
+web: python code.py $PORT
 requirements
