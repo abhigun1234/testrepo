@@ -1,6 +1,6 @@
 from flask import Flask,request,jsonify
 from flask import render_template
-from database.dbhelper import *
+#from database.dbhelper import *
 
 app = Flask(__name__)
 
@@ -20,7 +20,7 @@ def getCourseDetails():
 }
    courselist=[]
    courseDict={}
-   courselist=allCourses()
+   #courselist=allCourses()
    courseDict={"courses":courselist}
    #return jsonify(courseDict)
    return jsonify(str)
