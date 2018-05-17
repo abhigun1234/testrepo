@@ -13,8 +13,7 @@ def getCourseDetails():
   "courses": [
     {
       "duration": 3500,
-      "id": 1,
-      "name": "ANDROID                                           "
+      "id": 1, "name": "ANDROID" 
     }
   ]
 }
