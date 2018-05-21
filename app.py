@@ -1,6 +1,6 @@
 from flask import Flask,request,jsonify
 from flask import render_template
-#from database.dbhelper import *
+from database.dbhelper import *
 
 app = Flask(__name__)
 
@@ -13,7 +13,7 @@ def getCourseDetails():
   "courses": [
     {
       "duration": 3500,
-      "id": 1, "name": "ANDROID" 
+      "id": 1, "name": "ANDROID"
     }
   ]
 }
@@ -23,6 +23,10 @@ def getCourseDetails():
    courseDict={"courses":courselist}
    #return jsonify(courseDict)
    return jsonify(str)
+@app.route('/fetchAllCourseDetails')
+def fetchallCourse():
+ data=allCourses()
+ return jsonify(data)
 
 
 if __name__ == "__main__":
