@@ -14,6 +14,10 @@ def getCourseDetails():
     {
       "duration": 3500,
       "id": 1, "name": "ANDROID"
+    },
+      {
+      "duration": 23,
+      "id": 2, "name": "java"
     }
   ]
 }
