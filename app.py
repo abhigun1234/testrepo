@@ -6,7 +6,7 @@ app = Flask(__name__)
 
 @app.route('/')
 def index():
-	return render_template('index.html')
+	return render_template('myweb.html')
 @app.route('/coursedetails',methods = ['POST', 'GET'])
 def getCourseDetails():
    str={
@@ -18,6 +18,10 @@ def getCourseDetails():
       {
       "duration": 23,
       "id": 2, "name": "java"
+    },
+        {
+      "duration": 45,
+      "id": 2, "name": "python"
     }
   ]
 }
@@ -27,10 +31,10 @@ def getCourseDetails():
    courseDict={"courses":courselist}
    #return jsonify(courseDict)
    return jsonify(str)
-@app.route('/fetchAllCourseDetails')
+'''@app.route('/fetchAllCourseDetails')
 def fetchallCourse():
- data=allCourses()
- return jsonify(data)
+ #data=allCourses()
+ return jsonify(data)'''
 
 
 if __name__ == "__main__":
